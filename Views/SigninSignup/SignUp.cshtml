@@ -1,28 +1,28 @@
-﻿
+﻿@model User
 @{
     ViewData["Title"] = "Sign Up";
 }
 
 <div class="formBox" style="width: 100%;">
-    <form>
+    <form asp-action="Complete" asp-controller="SigninSignup">
         <div class="inputWithIcon">
-            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="name" placeholder="Name" asp-for="Name">
             <i class="fa fa-user fa-lg fa-fw"></i>
         </div>
         <div class="inputWithIcon">
-            <input type="text" name="contact" placeholder="Contact">
+            <input type="text" name="contact" placeholder="Contact" asp-for="Contact">
             <i class="fa fa-lock fa-lg fa-fw"></i>
         </div>
         <div class="inputWithIcon">
-            <input type="email" name="email" placeholder="Email">
+            <input type="email" name="email" placeholder="Email" asp-for="Email">
             <i class="far fa-envelope fa-lg fa-fw"></i>
         </div>
         <div class="inputWithIcon" style="margin-bottom: 20px;">
-            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password" asp-for="Password">
             <i class="fa fa-lock fa-lg fa-fw"></i>
         </div>
+        <button asp-area="" asp-controller="SigninSignup" asp-action="Complete" id="signUpButton" class="btn authButton" type="submit">Sign Up</button>
     </form>
-    <button id="signUpButton" class="btn authButton">Sign Up</button>
     <a class="redirectLink" asp-area="" asp-controller="SigninSignup" asp-action="Signin" style="margin-left: 172px;">Sign In</a>
 </div>
 
