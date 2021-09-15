@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<div class="formBox" style="width: 100%;">
+    <form>
+        <div class="inputWithIcon">
+            <input type="text" name="name" placeholder="Name">
+            <i class="fa fa-user fa-lg fa-fw"></i>
+        </div>
+        <div class="inputWithIcon">
+            <input type="text" name="contact" placeholder="Contact">
+            <i class="fa fa-lock fa-lg fa-fw"></i>
+        </div>
+        <div class="inputWithIcon">
+            <input type="email" name="email" placeholder="Email">
+            <i class="far fa-envelope fa-lg fa-fw"></i>
+        </div>
+        <div class="inputWithIcon" style="margin-bottom: 20px;">
+            <input type="password" name="password" placeholder="Password">
+            <i class="fa fa-lock fa-lg fa-fw"></i>
+        </div>
+    </form>
+    <button id="signUpButton" class="btn authButton">Sign Up</button>
+    <a class="redirectLink" asp-area="" asp-controller="SigninSignup" asp-action="Signin" style="margin-left: 172px;">Sign In</a>
+</div>
+

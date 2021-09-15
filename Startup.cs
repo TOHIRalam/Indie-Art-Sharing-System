@@ -115,7 +115,7 @@ namespace Indie_Art_Sharing_System
 
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=SigninSignup}/{action=Signin}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

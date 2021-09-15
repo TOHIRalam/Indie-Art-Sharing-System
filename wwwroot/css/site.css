@@ -1,71 +1,71 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿#AuthBody {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: url("/Assets/Background-2/5334569.svg") no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Amatic SC', cursive;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+.containerBox {
+    height: auto;
+    width: 400px;
+    margin: 150px auto 0px auto;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+input[type=email], input[type=password], input[type="text"] {
+    height: 30px;
+    width: 67%;
+    padding: 10px 65px;
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+    color: darkslategray;
+    border: 1px solid gray;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 25px;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.inputWithIcon {
+    position: relative;
+    width: 100%;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+.inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    padding: 18.1px 15px;
+    color: white;
+    background-color: gray;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+.redirectLink {
+    margin: 0px 170px;
+    font-family: 'rajdhani', Courier, monospace;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(70, 70, 194);
+    font-size: 18px;
 }
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+.authButton {
+    margin: 0 135px 10px 135px;
+    font-family: 'rajdhani', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    background: gray;
+    border: none;
+    color: white;
+    border-radius: 50px;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+.btn {
+    height: 50px;
+    width: 130px;
+    cursor: pointer;
 }
